@@ -25,10 +25,10 @@ class Ash_TierPricingTables_Model_System_Config_Source_Savings
     public function toOptionArray()
     {
         $this->_options = array(
-            array('value' => '', 'label' => Mage::helper('adminhtml')->__('-- Please Select --')),
-            array('value' => 'currency_only', 'label' => 'Currency Only'),
-            array('value' => 'percentage_only', 'label' => 'Percentage Only'),
-            array('value' => 'both_currency_and_percentage', 'label' => 'Both Currency and Percentage'),
+            array('value' => '', 'label' => Mage::helper('ash_tierpricingtables')->__('-- Please Select --')),
+            array('value' => 'currency_only', 'label' => Mage::helper('ash_tierpricingtables')->__('Currency Only')),
+            array('value' => 'percentage_only', 'label' => Mage::helper('ash_tierpricingtables')->__('Percentage Only')),
+            array('value' => 'both_currency_and_percentage', 'label' => Mage::helper('ash_tierpricingtables')->__('Both Currency and Percentage')),
         );
 
         return $this->_options;
