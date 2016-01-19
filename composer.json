@@ -1,0 +1,17 @@
+{
+    "name": "augustash/ash_tierpricingtables",
+    "description": "Magento 1.x module to display tier pricing in a table format instead of a list",
+    "homepage": "https://github.com/augustash/ash_tierpricingtables.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Johnson",
+            "email": "jjohnson@augustash.com"
+        }
+    ],
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "augustash/ash_core": "*",
+    }
+}

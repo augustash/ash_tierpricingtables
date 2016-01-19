@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Override Magento's tier pricing template to use a table instead of a list
+ *
+ * @category    Ash
+ * @package     Ash_TierPricingTables
+ * @copyright   Copyright (c) 2015 August Ash, Inc. (http://www.augustash.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Ash_TierPricingTables>
+             <version>0.1.0</version>
+        </Ash_TierPricingTables>
+    </modules>
+
+    <global>
+        <blocks>
+            <ash_tierpricingtables>
+                <class>Ash_TierPricingTables_Block</class>
+            </ash_tierpricingtables>
+        </blocks>
+        <helpers>
+            <ash_tierpricingtables>
+                <class>Ash_TierPricingTables_Helper</class>
+            </ash_tierpricingtables>
+        </helpers>
+        <models>
+            <ash_tierpricingtables>
+                <class>Ash_TierPricingTables_Model</class>
+            </ash_tierpricingtables>
+        </models>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <ash_tierpricingtables>
+                    <file>ash_tierpricingtables.xml</file>
+                </ash_tierpricingtables>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <ash_tierpricingtables>
+            <general>
+                <qty_table_header><![CDATA[Qty.]]></qty_table_header>
+                <price_table_header><![CDATA[Price]]></price_table_header>
+                <savings_table_header><![CDATA[Save up to (%)]]></savings_table_header>
+                <infer_missing_first_tier>1</infer_missing_first_tier>
+                <display_quantity_as_range>1</display_quantity_as_range>
+                <display_savings_as><![CDATA[both_currency_and_percentage]]></display_savings_as>
+            </general>
+        </ash_tierpricingtables>
+    </default>
+</config>

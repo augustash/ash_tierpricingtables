@@ -1,0 +1,5 @@
+app/etc/modules/Ash_TierPricingTables.xml                              app/etc/modules/Ash_TierPricingTables.xml
+app/code/community/Ash/TierPricingTables/                              app/code/community/Ash/TierPricingTables/
+app/locale/en_US/*                                                     app/locale/en_US/
+app/design/frontend/base/default/layout/*                              app/design/frontend/base/default/layout/
+app/design/frontend/base/default/template/ash_tierpricingtables/       app/design/frontend/base/default/template/ash_tierpricingtables/
